@@ -16,7 +16,7 @@ with team_seasons AS (
 
 expected_wins as (
   SELECT distinct
-  round(1.0*(points*points)/((points*points)+(points_opp*points_opp)), 3) as expected_win_pct,
+  round(1.0 * (points * points) / ((points * points) + (points_opp * points_opp)), 3) as expected_win_pct,
   team
   from nfl
   where year is 2020
