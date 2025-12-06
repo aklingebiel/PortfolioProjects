@@ -34,8 +34,8 @@ team_seasons.win_pct,
 expected_wins.expected_win_pct, 
 	CASE
     	when win_pct >= expected_win_pct * 1.05 then 'OVERPERFORMED' 
-      when win_pct <= expected_win_pct * 0.95 then 'UNDERPERFORMED' 
-      else 'ABOUT AS EXPECTED'
+        when win_pct <= expected_win_pct * 0.95 then 'UNDERPERFORMED' 
+        else 'ABOUT AS EXPECTED'
     End as performance,
 team_meta.conference, 
 team_meta.division
@@ -43,7 +43,6 @@ from team_seasons
 right outer join team_meta on team_meta.team = team_seasons.team
 right outer join expected_wins on expected_wins.team = team_seasons.team
 where year is 2020
-group by team_meta.team
 order by conference, division
 ;
 
