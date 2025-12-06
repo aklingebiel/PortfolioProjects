@@ -2,7 +2,25 @@
 This project analyzes long-term NFL team performance using SQL, focused on wins, scoring, point differential, efficiency, and consistency.
 
 ## CURRENT PROGRESS
-Day 1: A 'team_seasons' CTE containing core season-level metrics was built.
+Day 1: A 'team_seasons' CTE containing core season-level metrics was built. Performance vs. expected performance columns were created to compare a team's win/loss percentage to expected performance. Using the Pythagorean model, expected performance is calculated based on point totals for a given season. 
+
+Day 2:
+
+Day 3:
+
+Day 4:
+
+Day 5:
+
+Day 6:
+
+Day 7:
+
+Day 8:
+
+Day 9:
+
+Day 10:
 
 ## NEXT STEPS
 [] Add season rankings using window functions.
