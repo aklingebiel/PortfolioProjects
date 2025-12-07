@@ -1,4 +1,4 @@
-## Division Rank
+-- Division Rank
 
 Select 
 nfl_metrics.year,
@@ -15,7 +15,7 @@ where year is 2022
 group by nfl_metrics.team, conference, division
 order by conference, division;
 
-## Conference Rank
+-- Conference Rank
 
 Select 
 nfl_metrics.year,
@@ -32,7 +32,7 @@ where year is 2022
 group by nfl_metrics.team, conference
 order by conference;
 
-## NFL Rank
+-- NFL Rank
 
 select 
 nfl_metrics.year, 
