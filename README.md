@@ -24,7 +24,7 @@ Day 10:
 
 ## NEXT STEPS
 [X] Add season rankings using window functions.
-[]
+[] Generate group-level aggregates to reveal division and league trends.
 []
 []
 []
