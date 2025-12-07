@@ -4,7 +4,7 @@ This project analyzes long-term NFL team performance using SQL, focused on wins,
 ## CURRENT PROGRESS
 Day 1: A 'team_seasons' CTE containing core season-level metrics was built. Performance vs. expected performance columns were created to compare a team's win/loss percentage to expected performance. Using the Pythagorean model, expected performance is calculated based on point totals for a given season. 
 
-Day 2:
+Day 2: Teams were ranked by wins and points within its respective division, conference, and the entire NFL. Some teams may be out of place due to not accounting for tiebreakers.
 
 Day 3:
 
@@ -23,7 +23,7 @@ Day 9:
 Day 10:
 
 ## NEXT STEPS
-[] Add season rankings using window functions.
+[X] Add season rankings using window functions.
 []
 []
 []
