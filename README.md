@@ -1,5 +1,13 @@
 ## OVERVIEW
-This project analyzes long-term NFL team performance using SQL, focused on wins, scoring, point differential, efficiency, and consistency.
+This project analyzes 20 years of NFL team performance (2003–2023) using SQL to uncover scoring trends, group-level patterns, consistency metrics, and long-term changes across the league. The dataset contains season-level information for every NFL team, enabling a complete exploration of offensive and defensive performance using only structured SQL analysis.
+
+The project begins by building core metrics such as win percentage, point differential, Pythagorean expectation, and expected wins. League-wide season rankings are then added using SQL window functions, creating a consistent way to compare teams within each season.
+
+Group-level analysis follows, including division and conference averages and multi-year era comparisons to evaluate how scoring and defensive strength have changed over time. Additional layers of analysis include season-normalized performance metrics that compare each team to league averages, year-to-year consistency measurements, and segmenting teams into offensive, defensive, and point-differential tiers.
+
+Clean summary tables are then prepared for export to Excel, Tableau, or Power BI, where dashboards visualize long-term scoring trends, division strength, expected vs. actual wins, team tiers, and consistency patterns. The project concludes with documentation of methodology, insights, and the SQL techniques used throughout the workflow.
+
+This end-to-end project demonstrates SQL data cleaning, metric creation, window functions, aggregation, segmentation, performance analysis, visualization preparation, and professional documentation — all using a real 20-year dataset.
 
 ## CURRENT PROGRESS
 Day 1: A 'team_seasons' CTE containing core season-level metrics was built. Performance vs. expected performance columns were created to compare a team's win/loss percentage to expected performance. Using the Pythagorean model, expected performance is calculated based on point totals for a given season. 
