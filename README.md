@@ -31,17 +31,19 @@ Day 9:
 Day 10:
 
 ## NEXT STEPS
+[X] Build core team performance metrics using Pythagorean expectation.
+
 [X] Add season rankings using window functions.
 
-[] Generate group-level aggregates to reveal division and league trends.
+[] Analyze division and conference averages to compare group-level scoring and win trends.
 
 [] Build era-based summaries to compare offensive and defensive trends over time.
 
-[] Add opponent-adjusted efficiency metrics to show how teams perform relative to league norms.
+[] Create season-normalized performance metrics by comparing each team to league averages.
 
 [] Evaluate team consistency using multi-year performance variability.
 
-[] Segment team performance based on opponent strength categories.
+[] Segment teams into offensive, defensive, and point-differential tiers based on season-level metrics.
 
 [] Prepare clean, analysis-ready tables for visualization.
 
