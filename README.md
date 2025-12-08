@@ -1,7 +1,7 @@
 ## OVERVIEW
 This project analyzes 20 years of NFL team performance (2003–2023) using SQL to uncover scoring trends, group-level patterns, consistency metrics, and long-term changes across the league. The dataset contains season-level information for every NFL team, enabling a complete exploration of offensive and defensive performance using only structured SQL analysis.
 
-The project begins by building core metrics such as win percentage, point differential, Pythagorean expectation, and expected wins. League-wide season rankings are then added using SQL window functions, creating a consistent way to compare teams within each season.
+The project begins by building core metrics such as win percentage, point differential, Pythagorean expectation. League-wide season rankings are then added using SQL window functions, creating a consistent way to compare teams within each season.
 
 Group-level analysis follows, including division and conference averages and multi-year era comparisons to evaluate how scoring and defensive strength have changed over time. Additional layers of analysis include season-normalized performance metrics that compare each team to league averages, year-to-year consistency measurements, and segmenting teams into offensive, defensive, and point-differential tiers.
 
