@@ -27,19 +27,19 @@ Day 10:
 
 [] Generate group-level aggregates to reveal division and league trends.
 
-[]
+[] Build era-based summaries to compare offensive and defensive trends over time.
 
-[]
+[] Add opponent-adjusted efficiency metrics to show how teams perform relative to league norms.
 
-[]
+[] Evaluate team consistency using multi-year performance variability.
 
-[]
+[] Segment team performance based on opponent strength categories.
 
-[]
+[] Prepare clean, analysis-ready tables for visualization.
 
-[]
+[] Build dashboards that visualize trends, comparisons, and performance insights.
 
-[]
+[] Document project insights, methodology, and technical skills used.
 
 
 
