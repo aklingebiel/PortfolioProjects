@@ -1,3 +1,5 @@
+-- Update team names
+
 select team
 from nfl
 where team like 'wash%' or team like 'Las%' or team like 'Los%' 
@@ -19,6 +21,8 @@ update nfl
 set team = 'Las Vegas Raiders'
 where team in ('Oakland Raiders')
 
+-- Create CTE for division totals
+	
 with division_season as (
   select 
   team_meta.conference,
@@ -39,6 +43,8 @@ with division_season as (
   group by team_meta.conference, team_meta.division, era, year
 )
 
+-- Create query to find division averages
+	
 select 
 conference,
 division,
@@ -50,6 +56,8 @@ era
 from division_season
 group by conference, division, era
 order by conference, division, era;
+
+-- Create CTE for conference totals
 
 with conference_season as (
   select 
@@ -70,6 +78,8 @@ with conference_season as (
   group by conference, era, year
 )
 
+-- Create query to find conference averages
+	
 select 
 conference,
 round(avg(total_points), 2) as avg_points_for,
