@@ -1,5 +1,25 @@
+select team
+from nfl
+where team like 'wash%' or team like 'Las%' or team like 'Los%' 
+order by team; 
+
+update nfl
+set team = 'Washington Commanders'
+where team in ('Washington Commanders', 'Washington Redskins', 'Washington Football Team');
+
+update nfl
+set team = 'Los Angeles Rams'
+where team in ('St. Louis Rams');
+
+update nfl
+set team = 'Los Angeles Chargers'
+where team like (' Los Angeles Chargers');
+
+update nfl
+set team = 'Las Vegas Raiders'
+where team in ('Oakland Raiders')
+
 select
-nfl_metrics.team,
 round(avg(nfl_metrics.wins), 2) as avg_wins,
 round(avg(nfl_metrics.losses), 2) as avg_losses,
 round(avg(nfl_metrics.points), 2) as avg_points_for,
