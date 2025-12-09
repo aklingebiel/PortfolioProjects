@@ -1,3 +1,5 @@
+-- Create CTEs
+
 with team_seasons AS (
   
   select 
@@ -23,6 +25,8 @@ expected_wins as (
 
 )
 
+-- Create query to see how each team performed in a given year
+	
 select 
 team_seasons.year, 
 team_meta.team, 
