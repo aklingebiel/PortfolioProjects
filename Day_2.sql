@@ -1,6 +1,6 @@
 -- Division Rank
 
-Select 
+select 
 nfl_metrics.year,
 nfl_metrics.team,
 nfl_metrics.wins,
@@ -17,7 +17,7 @@ order by conference, division;
 
 -- Conference Rank
 
-Select 
+select 
 nfl_metrics.year,
 nfl_metrics.team,
 nfl_metrics.wins,
