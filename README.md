@@ -14,7 +14,7 @@ Day 1: A 'team_seasons' CTE containing core season-level metrics was built. Perf
 
 Day 2: Assigned league-wide rankings for a selected season using window functions, ordering by wins and points while noting that NFL tiebreakers were not applied.
 
-Day 3: Calculated averages for divisions and conferences through different eras.
+Day 3: Produce division- and conference-level era summaries by aggregating total wins, losses, and points to evaluate group performance trends.
 
 Day 4:
 
