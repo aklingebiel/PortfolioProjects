@@ -16,7 +16,7 @@ Day 2: Assigned league-wide rankings for a selected season using window function
 
 Day 3: Produce division- and conference-level era summaries by aggregating total wins, losses, and points to evaluate group performance trends.
 
-Day 4:
+Day 4: Generated team-level era summaries by averaging wins, losses, points scored, and points allowed to compare long-term offensive and defensive performance across franchises.
 
 Day 5:
 
@@ -37,7 +37,7 @@ Day 10:
 
 [X] Analyze division and conference averages to compare group-level scoring and win trends.
 
-[] Build era-based summaries to compare offensive and defensive trends over time.
+[X] Build era-based summaries to compare offensive and defensive trends over time.
 
 [] Create season-normalized performance metrics by comparing each team to league averages.
 
