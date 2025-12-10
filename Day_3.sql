@@ -25,6 +25,7 @@ where team in ('Oakland Raiders')
 	
 with division_season as (
   select 
+  team_meta.team,
   team_meta.conference,
   team_meta.division,
   	CASE
@@ -48,10 +49,14 @@ with division_season as (
 select 
 conference,
 division,
-round(avg(total_points_for), 2),
-round(avg(total_points_against), 2),
-round(avg(total_wins), 2),
-round(avg(total_losses), 2),
+sum(total_points_for) as total_points_for_era,
+sum(total_points_against) as total_points_against_era,
+round(avg(total_points_for), 2) as avg_points_for,
+round(avg(total_points_against), 2) as avg_points_against,
+round(avg(total_wins), 2) as avg_wins_division_year,
+round(avg(total_losses), 2) as avg_losses_division_year,
+round(avg(total_wins) / 4, 2) as avg_wins_team_year,
+round(avg(total_losses) / 4, 2) as avg_losses_team_year,
 era
 from division_season
 group by conference, division, era
@@ -82,10 +87,10 @@ with conference_season as (
 	
 select 
 conference,
-round(avg(total_points), 2) as avg_points_for,
-round(avg(total_points_against), 2) as avg_points_against,
-round(avg(total_wins), 2) as avg_wins,
-round(avg(total_losses), 2) as avg_losses,
+round(avg(total_points), 2) as avg_points_for_year,
+round(avg(total_points_against), 2) as avg_points_against_year,
+round(avg(total_wins), 2) as avg_wins_year,
+round(avg(total_losses), 2) as avg_losses_year,
 era
 from conference_season
 group by conference, era
